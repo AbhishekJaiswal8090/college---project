@@ -1,0 +1,160 @@
+*{
+    font-family:Lexend Deca;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(216, 205, 205, 0.817);
+   
+}
+header{
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    height: 15vh;
+    width: 100%;
+    font-size: 3vh;
+    display: flex;
+    background-color:#f5c811ed ;
+}
+#section1{
+    margin-top: 15vh;
+}
+.first-nav{
+    margin-left: 4%;
+    height: 100%;
+    width: 35%;
+    background-color:#f5c811ed ;
+    display: flex;
+    align-items: center;
+}
+.first-nav img{
+    margin-left: 2%;
+    height: 100%;
+    
+}
+
+.first-nav h1 a{
+    background-color:#f5c811ed ;
+    text-decoration: none;
+    color: black;
+   
+}
+.scnd-nav{
+    justify-content: flex-start;
+    display: flex;
+    height: 100%;
+    width: 65%;
+    background-color: #f5c811ed;  
+    align-items: center; 
+}
+.scnd-nav h2{
+    background-color:#f5c811ed ;
+}
+#section1{
+    height: 85vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.tutorial{
+    align-items: center;
+    margin: 2%;
+    height: 40vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.tutorial-1{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section2{
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    margin-left: 3%;
+}
+#section3{
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    margin-left: 3%;
+}
+#section4{
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    margin-left: 3%;
+}
+p{
+    margin-top: 5px;
+    color: black;
+}
+.question-sec{
+
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 7, 33);;
+    border-radius: 20px;
+
+}
+h3{
+    color: white;
+    margin-top:2vh ;
+    background-color: rgb(7, 7, 33);;
+}
+#ans-sec{
+    transition: ease-in;
+    color: rgb(255, 255, 255);
+    font-size: 2.4vh;
+    margin: 2%;
+    padding: 5%;
+    height: fit-content;
+    width: 80%;
+    background-color: rgb(7, 7, 33);
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px 4px #1c1b1aed;;;
+    
+}
+#ques-sec{
+    border-radius: 20px;
+    height: 1vh;
+    width: 40%;
+    margin: 2%;
+    padding: 5%;
+    background-color: rgba(22, 22, 41, 0.959);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#ans-sec P{
+    background-color:  rgb(7, 7, 33);;
+    color: white;
+}
+button{
+    font-size: 5vh;
+    align-items: center;
+    background-color: rgba(41, 43, 49, 0.884);
+    color: white;
+    border-radius: 10px;
+    
+}
+input{
+    border-radius: 20px;
+    background-color: rgb(10, 10, 39);
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    align-items: center;
+}
+
+

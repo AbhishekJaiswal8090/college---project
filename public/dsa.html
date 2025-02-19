@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@google/generative-ai/dist/generative-ai.js"></script>
+</head>
+<style>
+    *{   
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Lexend Deca;
+            background-color: rgba(216, 205, 205, 0.817);
+        }
+        .container-1{
+           top: 0;
+           position: fixed;
+           z-index: 1000;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 15%;
+           width: 100%;
+           color: rgb(0, 0, 0);
+           background-color: #f5c811ed;;
+       }
+        .first-nav{
+            margin-left: 4.1%;
+            height: 100%;
+            width: 35%;
+            background-color:#f5c811ed ;
+            display: flex;
+            align-items: center;
+        }
+        .first-nav img{
+            margin-left: 4.4%;
+            height: 100%;
+            
+        }
+        .first-nav h1 a{
+            text-decoration: none;
+            color: black;
+            background-color: #f5c811ed;
+        }
+        .scnd-nav{
+            justify-content: flex-start;
+            display: flex;
+            height: 100%;
+            width: 65%;
+            background-color: #f5c811ed;  
+            align-items: center; 
+        }
+        .scnd-nav h2{
+            background-color:#f5c811ed; ;
+        }
+        .Tutorials{
+            margin-top: 8%;
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .tutorial{
+            display: flex;
+            flex-direction: row;
+            height: 50%;
+            width: 90%;
+            margin: 2%;
+            align-items: center;
+            padding-bottom: 1%;
+        }
+        .tutorial-1{
+            height:100% ;
+            width: 33.3%;
+            align-items: center;
+            text-align: center;
+
+        }
+        .scnd-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        .third-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        .fourth-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        
+.question-sec{
+
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 7, 33);;
+    border-radius: 20px;
+
+}
+h3{
+    color: white;
+    margin-top:2vh ;
+    background-color: rgb(7, 7, 33);;
+}
+#ans-sec{
+    transition: ease-in;
+    color: rgb(255, 255, 255);
+    font-size: 2.4vh;
+    margin: 2%;
+    padding: 5%;
+    height: fit-content;
+    width: 80%;
+    background-color: rgb(7, 7, 33);
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px 4px #1c1b1aed;;;
+}
+#ques-sec{
+    border-radius: 20px;
+    height: 1vh;
+    width: 40%;
+    margin: 2%;
+    padding: 5%;
+    background-color: rgba(22, 22, 41, 0.959);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    font-size: 5vh;
+    align-items: center;
+    background-color: rgba(41, 43, 49, 0.884);
+    color: white;
+    border-radius: 10px;
+    
+}
+input{
+    border-radius: 20px;
+    background-color: rgb(10, 10, 39);
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    align-items: center;
+}
+#ans-sec P{
+    background-color:  rgb(7, 7, 33);;
+    color: white;
+}
+</style>
+<body>
+    <div class="first-container-for-tutorials">
+        
+        <div class="container-1">
+         <div class="first-nav">
+             <img src="Edu Verse (2).png" alt="">
+              <h1><a href="">EduVerse</a></h1>
+         </div>
+         <div class="scnd-nav">
+             <h2>Here's Your All DSA Tutorials</h2>   
+         </div>
+        </div>
+        <div class="Tutorials">
+             <div class="tutorial" data-aos="fade-up">
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/VTLCoHnyACE?si=-YCW7GAcH1pjwWvx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>1. FLOWCHART & PSUEDOCARD</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/Dxu7GKtdbnA?si=PA_RWcmUphhMIlBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>2. VARIABLE & DATA TYPES</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/qR9U6bKxJ7g?si=Cie1d6eRr5AsXOpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>3. CONDITIONAL STATEMENT</p>
+                 </div>
+             </div>
+             <div class="tutorial" data-aos="fade-up">
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/rga_q2N7vU8?si=-3dSGSKoa3FFR937" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>4. PATTERNS</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/P08Z_NC8GuY?si=08WbW6I70o9X8qIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>5. FUNCTIONS</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/xpy5NXiBFvA?si=smZDlfceC9A4OORt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>6. BINARY NUMBER SYSTEM</p>
+                 </div>
+             </div>
+             
+        </div>
+     </div>
+     <div class="scnd-container-for-tutorials">
+         <div class="Tutorials" >
+             <div class="tutorial" data-aos="fade-up">
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/r-u4uh3QvsQ?si=3ZVgP6UTQ1dL7m-H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>7. BITWISE OPERATION</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/8wmn7k1TTcI?si=V7JL1sPvkMj2musH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>8. ARRAY DATA STRUCTURE</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/NWg38xWYzEg?si=RIctt2UX53PevDBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>9. VECTORS IN C++ </p>
+                 </div>
+             </div>
+             <div class="tutorial" data-aos="fade-up">
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/9IZYqostl2M?si=CW8CoWMBlBccmyaz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>10. KADANE'S ALGORITHM</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/_xqIp2rj8bo?si=5-MOt7V7j-Z6nnl-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>11. MAJORITY ELEMENT</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/PwKv8fOcriM?si=IWtqnkLelGhXe1oH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>12. TIME & SPACE COMPLEXITY</p>
+                 </div>
+             </div>
+        </div>
+     </div>
+     <div class="third-container-for-tutorials">
+         <div class="Tutorials" data-aos="fade-up">
+             <div class="tutorial">
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/WBzZCm46mFo?si=ZFbWgXhjukTagnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>13. BUY AND SELL PROBLEM</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/EbkMABpP52U?si=S5VFNyWVY2sGNsPL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>14. CONTAINER WITH MOST WATER PROBLEM</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/TW2m8m_FNJE?si=8-L1e7OZ_SGVa04K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>15. PRODUCT OF ARRAY</p>
+                 </div>
+             </div>
+             <div class="tutorial">
+                 <div class="tutorial-1" data-aos="fade-up">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/qYEjR6M0wSk?si=rX1BQYD8Moqs7PMH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>16. POINTERS IN C++</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/TbbSJrY5GqQ?si=qwiDR39bZ9rwLVsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>17.BINARY SEARCH ALGORITM</p>
+                 </div>
+                 <div class="tutorial-1">
+                    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/6WNZQBHWQJs?si=EUpZrGv_414JqE7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <p>18.SEARCH IN ROTATE SORTED ARRAY</p>
+                 </div>
+             </div>
+      </div>
+     </div>
+     <div class="fourth-container-for-tutorials">
+         <div class="Tutorials" data-aos="fade-up">
+            <div class="tutorial">
+              <div class="tutorial-1">
+                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/RjxD6UXGlhc?si=T1lyNkVRTtboVFmq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <P>19. PEAK INDEX(MOUNTAIN ARR)</P>
+              </div>
+              <div class="tutorial-1">
+                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/qsbCBduIs40?si=HEX4ZUMugkItw_ht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <p>20.SINGLE ELEMENT</p>
+              </div>
+              <div class="tutorial-1">
+                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/JRAByolWqhw?si=8rL1bOO4zYKhcGee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <p>21.BOOK ALLOCATION</p>
+              </div>
+            </div>
+            <div class="tutorial" data-aos="fade-up">
+              <div class="tutorial-1">
+                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/srsFN5OHBgw?si=6EvzVVnn31mgCSz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <p>22.PAINTERS PARTITION PRO.</p>
+              </div>
+              <div class="tutorial-1">
+                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/7wOzDqsfXy0?si=vcTy02Og29pKgn5-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <p>23.AGGRESIVE COW PROBLEM</p>
+              </div>
+              <div class="tutorial-1">
+                <iframe width="90%" height="90%" src="https://www.youtube.com/embed/1jCFUv-Xlqo?si=u1sD1NK4KpCAkYia" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>24.SORTING ALGORITHM</p>
+              </div>
+            </div>
+         </div>
+     </div>
+     <section id="section5">
+         <div class="code-editor">
+            <iframe id="codeEditor" frameBorder="0" height="450px" src="https://onecompiler.com/embed/c" width="100%"></iframe>
+         </div>
+         <div class="question-sec">
+            <h3>If Any Queries Ask it Here</h3>
+             <div id="ans-sec">Get answer with Gemini</div>
+             <div id="ques-sec">
+                <input type="text" id="input"  >
+                <button id="submit-button">Search</button>
+             </div>
+         </div>
+     </section>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="script.js"></script>  
+</body>
+</html>
