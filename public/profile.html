@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Lexend Deca;
+        font-size: 2.4vh;
+    }
+    .container{
+        height: 120vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 13vh;
+        width: 100vw;
+        background-color:#f5c811ed ;
+        color: black;
+        align-items: center;
+        text-align: center;
+        font-size: 4vh;
+    }
+    main{
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+    }
+    main .first-box{
+        height: 90%;
+        width: 40%;
+        background-color: rgb(0, 0, 0);
+        margin: 2%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .first-box img{
+        border-radius:50% ;
+    }
+    .first-box h1{
+        color: white;
+        font-size:8vh ;
+
+    }
+    .first-box p{
+        margin: 0;
+        color: white;
+        font: 7vh;
+        font-weight: 600;
+    }
+    .first-box ul{
+        margin: 2%;
+        padding: 1%;
+    }
+    .first-box ul li{
+        font-size: 3vh;
+        margin: 0;
+        padding: 0;
+        color: white;
+        list-style-type:lower-greek;
+
+    }
+    main .scnd-box{
+        height: 90%;
+        width: 40%;
+        background-color:black ;
+        margin: 2%;
+        padding: 2%;
+        
+    }
+    .scnd-box .sign-up{
+        height: 90%;
+        width: 80%;
+        margin-right: 5%;
+        padding: 2%;
+        background-color: white;
+        border-radius: 5%;
+    }
+    .first-part-of-page{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+    .header{
+        margin: 3%;
+        padding: 3%;
+        height: 10%;
+        width: 100%;
+        font-size: 5vh;
+        color: black;
+    }
+    .account{
+        height: 10%;
+        width: 100%;
+        margin-left: 40%;
+        color: black;
+    }
+    .borders{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-borders{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 4%;
+    }
+    .first-item{
+        cursor: pointer;
+        height: 80%;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.358);
+        border-radius: 5px;
+        padding: 1%;
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .second-item{
+        cursor: pointer;
+        height: 80%;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.422);
+        border-radius: 5px;
+        padding: 1%;
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .second-borders{
+        margin-top: 2%;
+        width: 100%;
+        height: 50%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .third-item{
+        cursor: pointer;
+        height: 80%;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.475);
+        border-radius: 5px;
+        padding: 1%;
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    b{
+        font-size: 3vh;
+    }
+    span{
+        height: 10%;
+        width: 100%;
+        display:inline-block;
+        align-items: center;
+        justify-content: center;
+      
+        margin-left: 14vw;
+        margin-top: 1vh;
+    }
+    .scnd-part-of-page{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .scnd-part-of-page form textarea{
+        align-items: center;
+        text-align: center;
+    }
+    .scnd-part-of-page form input{
+        margin-top: 0;
+        margin-bottom: 2vh;
+    }
+    .scnd-part-of-page form #email{
+        margin-left: 5vh;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <header>
+           
+        </header>
+        <main>
+         <div class="first-box">
+            <img src="Edu Verse (2).png" alt="img" width="20%">
+            <h1>Become A <br> Eduverse Learner</h1>
+            <p>Ease To Learn & Ease To Grow</p>
+            <ul>
+                <li>Track your progress</li>
+                <li>Set your goals</li>
+                <li>Get a personalized learning path</li>
+                <li>Test your skill</li>
+                <li>Build and host a website</li>
+            </ul>
+         </div>
+         <div class="scnd-box">
+            <div class="sign-up">
+                <div class="first-part-of-page">
+                   <div class="header">Signup</div>
+                   <div class="account">Already have an account? <a href="login.html">Log in</a></div>
+                   <div class="borders">
+                     <div class="first-borders">
+                        <div class="first-item">
+                            <b>Google</b>
+                            <img src="https://th.bing.com/th?id=OIP.AfKMLf4rKX7EqOSAVpujIQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="" height="70%">
+                        </div>
+                        <div class="second-item">
+                            <b>Facebook</b>
+                            <img src="data:image/jpeg;base64,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" width="20%" alt="">
+                        </div>
+                     </div>
+                     <div class="second-borders">
+                        <div class="third-item">
+                            <b>Linkedin</b>
+                            <img src="https://th.bing.com/th?id=OIP.BmKnwjkmgQvEDq9VHjowzQHaHY&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" width="20%" alt="">
+                        </div>
+                     </div>
+                   </div>
+                </div>
+                <span>OR</span>
+                <div class="scnd-part-of-page">
+                    <form action="/signup" method="POST"> 
+                        <label for="username">Username:</label> 
+                        <input type="text" id="username" name="username" required><br> 
+                        <label for="password">Password:</label> 
+                        <input type="password" id="password" name="password" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br> 
+                        <button type="submit">Sign Up</button> </form>
+                </div>
+            </div>
+         </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

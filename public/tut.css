@@ -1,0 +1,202 @@
+*{   
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Lexend Deca;
+            background-color: rgba(216, 205, 205, 0.817);
+        }
+        .first-nav{
+            margin-left: 4.1%;
+            height: 100%;
+            width: 35%;
+            background-color:#f5c811ed ;
+            display: flex;
+            align-items: center;
+        }
+        .first-nav img{
+            margin-left: 4.4%;
+            height: 100%;
+            
+        }
+        .first-nav h1 a{
+            background-color: #f5c811ed;
+            text-decoration: none;
+            color: black;
+        }
+        .scnd-nav{
+            justify-content: flex-start;
+            display: flex;
+            height: 100%;
+            width: 65%;
+            background-color: #f5c811ed;  
+            align-items: center; 
+        }
+        .scnd-nav h2{
+            background-color: #f5c811ed;
+        }
+        .first-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        .container-1{
+           
+            position: fixed;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15%;
+            width: 100%;
+            color: rgb(0, 0, 0);
+            background-color: #f5c811ed;;
+        }
+        .Tutorials{
+            margin-top: 8%;
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .tutorial{
+            display: flex;
+            flex-direction: row;
+            height: 50%;
+            width: 90%;
+            margin: 2%;
+            align-items: center;
+            padding-bottom: 1%;
+        }
+        .tutorial-1{
+            height:100% ;
+            width: 33.3%;
+            align-items: center;
+            text-align: center;
+
+        }
+        .scnd-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        .third-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        .fourth-container-for-tutorials{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+        
+.question-sec{
+
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 7, 33);;
+    border-radius: 20px;
+
+}
+h3{
+    color: white;
+    margin-top:2vh ;
+    background-color: rgb(7, 7, 33);;
+}
+#ans-sec{
+    transition: ease-in;
+    color: rgb(255, 255, 255);
+    font-size: 2.4vh;
+    margin: 2%;
+    padding: 5%;
+    height: fit-content;
+    width: 80%;
+    background-color: rgb(7, 7, 33);
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px 4px #1c1b1aed;;;
+}
+#ans-sec P{
+    background-color:  rgb(7, 7, 33);;
+}
+#ans-sec strong{
+    background-color:  rgb(7, 7, 33);;
+}
+#ques-sec{
+    border-radius: 20px;
+    height: 1vh;
+    width: 40%;
+    margin: 2%;
+    padding: 5%;
+    background-color: rgba(22, 22, 41, 0.959);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    font-size: 5vh;
+    align-items: center;
+    background-color: rgba(41, 43, 49, 0.884);
+    color: white;
+    border-radius: 10px;
+    
+}
+input{
+    border-radius: 20px;
+    background-color: rgb(10, 10, 39);
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    align-items: center;
+}
+.chat{
+    height:75vh;
+    width: 100vw;
+    background-color: rgb(225, 225, 225);
+}
+.chat-room{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+}
+.chat-box{
+    display: flex;
+  height: 70%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chat-box h1{
+    text-align: center;
+     margin: 2vh;
+      font-size: 5vh;
+       height: 15%; 
+       width: 80%;
+       
+ }
+ .chat-text{
+    height: 85%;
+    width: 80%;
+    background-color: rgb(2, 2, 2);
+    border-radius: 10px;
+    color: white;
+ }
+.chat-input{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
